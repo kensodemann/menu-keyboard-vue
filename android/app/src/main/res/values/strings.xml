@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">menu-keyboard-vue</string>
+    <string name="title_activity_main">menu-keyboard-vue</string>
+    <string name="package_name">io.ionic.menukeyboardvue</string>
+    <string name="custom_url_scheme">io.ionic.menukeyboardvue</string>
+</resources>

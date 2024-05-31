@@ -19,10 +19,10 @@
       <div id="container">
         <strong class="capitalize">{{ $route.params.id }}</strong>
         <p>
-          Explore
-          <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"
-            >UI Components</a
-          >
+          <ion-button @click="onClick('one')">Button One</ion-button>
+          <ion-button @click="onClick('two')">Button Two</ion-button>
+          <ion-button @click="onClick('three')">Button Three</ion-button>
+          <ion-button @click="onClick('four')">Button Four</ion-button>
         </p>
       </div>
     </ion-content>
@@ -30,7 +30,11 @@
 </template>
 
 <script setup lang="ts">
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonButtons, IonButton, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+
+const onClick = (id: string) => {
+  alert(`you clicked ${id}`);
+};
 </script>
 
 <style scoped>
